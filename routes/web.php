@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/masti', 'HomeController@index')->name('home');
 
 Auth::routes();
 
